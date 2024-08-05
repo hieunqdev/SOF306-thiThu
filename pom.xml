@@ -41,7 +41,7 @@
 		<dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-starter-security</artifactId>
-	        <version>2.7.10</version> <!-- Phiên bản tương thích với Spring Security 5.x -->
+	        <version>2.7.10</version>  
     	</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

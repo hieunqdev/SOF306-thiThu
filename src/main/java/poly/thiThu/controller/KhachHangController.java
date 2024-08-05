@@ -40,7 +40,7 @@ public class KhachHangController {
         Pageable pageable = PageRequest.of(page, size);
         return khachHangService.getKhachHangPage(pageable);
     }
-    
+    // note
     @PostMapping("/add")
     public KhachHang addKhachHang(@RequestBody KhachHang khachHang) {
         if (khachHang.getTenKhachHang().isEmpty()) {
@@ -53,7 +53,7 @@ public class KhachHangController {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Giới tính không được để trống");
         }
 		KhachHang savedKhachHang = khachHangService.add(khachHang);  
-        return savedKhachHang;
+        return khachHang;
     }
     
     @DeleteMapping("/{id}")

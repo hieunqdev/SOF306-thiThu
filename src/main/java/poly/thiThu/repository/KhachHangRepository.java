@@ -17,5 +17,6 @@ public interface KhachHangRepository extends JpaRepository<KhachHang, Long>{
 	+ "on kh.hangkhachhang = hkh.mahang;", nativeQuery = true)
 	List<Map<String, Object>> findAllWithHangKhachHang();
 	
+//	findAll: được cung cấp sẵn bởi JpaRepository để hỗ trợ phân trang
 	Page<KhachHang> findAll(Pageable pageable);
 }
